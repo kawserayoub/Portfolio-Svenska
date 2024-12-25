@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawser 🌐 Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kawser Ayoub</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Om mig</a></li>
+          <li><a href="#experience">Erfarenhet</a></li>
+          <li><a href="#projects">Projekt</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kawser Ayoub</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Om mig</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Erfarenhet</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projekt</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/etta.jpg" alt="Kawser Ayoub profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Halloj, Mitt Namn Är</p>
+          <h1 class="title">Kawser Ayoub</h1>
+          <p class="section__text__p2">IT Entusiast</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('assets/CV - SV.pdf')"
+            >
+              Ladda Ner CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Kontakt Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/kawser-ayoub/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/kawserayoub/'"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Lär Känna Mig!</p>
+        <h1 class="title">Om Mig</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/svart.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Utbildning</h3>
+              <p>För Närvarande Inskriven<br />@ EC Utbildning (Stockholm)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Tar Examen</h3>
+              <p>År 2025 🎓<br />Yrkeshögeskoleexamen</p>
+            </div>
+          </div>
+          <div class="text-container">
+             <p>Hej, Kawser här! <br><br>
+
+              Jag har en bakgrund inom Data Science och håller nu på att övergå till IT-support och Cybersäkerhet.
+              Min resa började med en yrkeshögskoleutbildning inom Data Science där jag utvecklade färdigheter i
+              problemlösning, kritiskt tänkande och anpassningsförmåga.
+              Genom min erfarenhet har jag lärt mig att metodiskt ta itu med utmaningar och leverera effektiva lösningar.
+              <br><br>
+
+              Med 8 års erfarenhet inom kundservice har jag lärt mig värdet av tydlig kommunikation, empati och att 
+              lösa problem på ett sätt som får människor att känna sig stöttade. Jag vill ta med mig min tekniska kunskap och 
+              kundfokuserade inställning in i IT, med fokus på att hjälpa användare lösa problem och förbättra system. 
+              <br><br>
+              
+              Just nu söker jag en arbetsplats som kombinerar
+              👩🏾‍💻teknologi, 🌍 hållbarhet och ⚖️ jämlikhet.
+            
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Utforska Mina</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Hard Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Python (Programming Language)</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL (Programming Language)</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>R (Programming Language)</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Business Intellegience (Power BI)</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Machine Learning</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Deep Learning</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Soft Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Kritisk-tänkande</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Anpassningsbar</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Uppmärksamhet på detaljer</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Problemlösning</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Utforska Mina Senaste</p>
+        <h1 class="title">Projekt</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/etl.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Agricultural Data Automation</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/kawserayoub/AgriPest-Weather-ETL'"
+                >
+                  Github
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/emotion.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Emotion, Gender & Age Detector</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/kawserayoub/Deep-Learning'"
+                >
+                  Github
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/mnist.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Handwritten Digit Predictor</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/kawserayoub/Machine-Learning/tree/main'"
+                >
+                  Github
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Kontakta mig</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">kawser.ayoub@hotmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/kawser-ayoub/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">Om mig</a></li>
+              <li><a href="#experience">Erfarenhet</a></li>
+              <li><a href="#projects">Projekt</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Kawser Ayoub. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
